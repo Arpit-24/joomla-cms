@@ -132,3 +132,10 @@
     overflow: visible;
   }
 }
+
+// Removes outline on click of featured toggle button
+button.tbody-icon {
+  &:focus {
+    outline: none;
+  }
+}
