@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="template">
+	<name>proposalTest</name>
+	<creationDate>08/04/2019</creationDate>
+	<author>Arpit-24</author>
+	<authorEmail>arpitanshuman2403@gmail.com</authorEmail>
+	<authorUrl>https://github.com/Arpit-24</authorUrl>
+	<copyright>Arpit 2019</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Test for Proposal</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>
