@@ -25,7 +25,7 @@ HTMLHelper::_('bootstrap.loadCss', true, $this->direction);
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
 	</head>
-	<body>
+	<body onload="loaded()">
 		<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
 			<a class="navbar-brand" href="#"><img class="img-thumbnail" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/1.jpg" alt="Profile Image" id="navbar-img"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSmallContent" aria-controls="navbarSmallContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,4 +151,6 @@ HTMLHelper::_('bootstrap.loadCss', true, $this->direction);
 		</section>
 		<!-- Footer -->
 	</body>
+	<?php
+	$document->addScriptDeclaration('function loaded() {console.log(document.getElementsByClassName("comment-content")[0].getAttribute("custom-param"));}'); ?>
 </html>
