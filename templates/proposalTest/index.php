@@ -2,6 +2,7 @@
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 
 JHtml::_('bootstrap.framework');
@@ -54,7 +55,7 @@ HTMLHelper::_('bootstrap.loadCss', true, $this->direction);
 					<!-- Left Sidebar -->
 					<jdoc:include type="modules" name="breadcrumbs" style="default" />
 				</div>
-				<div class="col-md-8 comment-content">
+				<div class="col-md-8 comment-content" custom-param="<?php echo htmlspecialchars(Factory::getApplication()->get('sitename'), ENT_QUOTES, 'UTF-8') ?>">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 					<!-- Designing a comment section -->
